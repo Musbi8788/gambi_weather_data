@@ -28,6 +28,7 @@ with open(filename) as f: # Open file as f
     plt.ylabel('Temperature (F)', fontsize=12)
     plt.tick_params(axis='both',  which='major', labelsize=12, color='blue')
 
-    plt.show()
+    # plt.show()
+    plt.savefig('images/banjul_tem.png', bbox_inches="tight", edgecolor='none')
 
 
