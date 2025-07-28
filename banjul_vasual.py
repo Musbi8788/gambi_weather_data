@@ -22,7 +22,7 @@ with open(filename) as f: # Open file as f
     fig, ax = plt.subplots()
     ax.plot(dates, temp_max, c='green') # set the plot
 
-    plt.title("Banjul Temperatures, July 2025", fontsize=18)
+    plt.title("High Temperatures in Banjul (July–August) 2025", fontsize=18)
     plt.xlabel('', fontsize=12)
     fig.autofmt_xdate()
     plt.ylabel('Temperature (F)', fontsize=12)
