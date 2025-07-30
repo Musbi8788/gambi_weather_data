@@ -58,7 +58,7 @@ with open(sukuta_filename) as sf:
     ax.legend()
     ax.set_ylim()
 
-    plt.title("Daily Rainfall: Banjul vs Sukuta\nJuly-August 2025", fontsize=20)
+    plt.title("Daily Rainfall: Banjul vs Sukuta\nJuly-August 2025", fontsize=18)
     plt.xlabel('', fontsize=16)
     plt.ylabel("Rain Fall (F)", fontsize=16)
     plt.tick_params(axis='both',  which='major', labelsize=12, color='blue')
