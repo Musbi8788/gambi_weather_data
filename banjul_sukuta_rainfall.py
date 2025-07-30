@@ -44,11 +44,11 @@ with open(sukuta_filename) as sf:
             s_dates.append(s_current_date)
             s_rainfalls.append(s_rain)
 
-    plt.style.use('fivethirtyeight')
+    plt.style.use('seaborn-v0_8-whitegrid')
     fig, ax = plt.subplots()
     fig.autofmt_xdate()
     # Plot bajul data
-    ax.plot(b_dates, b_rainfalls, c='blue', label="Banjul",
+    ax.plot(b_dates, b_rainfalls, c='red', label="Banjul",
             alpha=0.5, marker='o', linewidth=2)
 
     # Plot sukuta data
@@ -58,10 +58,10 @@ with open(sukuta_filename) as sf:
     ax.legend()
     ax.set_ylim()
 
-    plt.title("Daily RainFall between banjul and sukuta\nJuly-August 2025", fontsize=20)
+    plt.title("Daily Rainfall: Banjul vs Sukuta\nJuly-August 2025", fontsize=20)
     plt.xlabel('', fontsize=16)
     plt.ylabel("Rain Fall (F)", fontsize=16)
     plt.tick_params(axis='both',  which='major', labelsize=12, color='blue')
 
-    plt.savefig('images/banjul_sukuta_rainfall_new.png')
+    plt.savefig('images/banjul_sukuta_rainfall_light.png')
     plt.show()
